@@ -1,0 +1,433 @@
+* {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif, "Segoe UI Symbol",
+    "Helvetica Neue", Arial !important;
+}
+body,
+html,
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+.el-menu-item:hover,
+.sidebar-container {
+  background-color: rgb(48, 65, 86) !important;
+}
+.el-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.el-main {
+  color: #333;
+  float: left;
+  clear: both;
+  width: calc(100% - 40px);
+  height: calc(100% - 100px);
+  background-color: #fff;
+  margin: 20px !important;
+  box-shadow: 0 0 20px rgb(128 145 165 / 20%);
+}
+.center {
+  text-align: center;
+  display: block;
+  clear: both;
+}
+
+.cm-s-monokai.CodeMirror,
+.CodeMirror-code {
+  background-color: #ffffff !important;
+  margin-bottom: 30px;
+  padding-bottom: 45px;
+}
+
+.yaml-editor {
+  height: 100%;
+  position: relative;
+}
+
+.yaml-editor .cm-s-rubyblue span.cm-string {
+  color: #f08047;
+}
+
+.cm-s-monokai .CodeMirror-gutters {
+  background-color: #f7f7f7 !important;
+}
+.CodeMirror,
+.cm-s-monokai,
+.cm-s-monokai.CodeMirror {
+  background-color: #ffffff !important;
+  color: #000 !important;
+}
+.cm-string {
+  color: #000 !important;
+}
+
+.cm-s-monokai .CodeMirror-cursor {
+  border-left: 2px solid #000000 !important;
+}
+.CodeMirror-scroll {
+  border: 1px solid #e2e2e2;
+}
+.CodeMirror,
+.yaml-editor .CodeMirror-scroll {
+  overflow: auto;
+  margin-bottom: 0px !important;
+  margin-right: 0px !important;
+  outline: #000 !important;
+}
+thead .cell,
+thead {
+  height: 53px;
+  line-height: 53px !important;
+}
+thead th {
+  padding: 0px !important;
+}
+.el-dialog__wrapper {
+  width: 96% !important;
+  height: 96% !important;
+  position: fixed;
+  top: 2% !important;
+  left: 2% !important;
+  bottom: 2% !important;
+  bottom: 2% !important;
+}
+
+.strategy {
+  display: flex;
+  justify-content: center;
+  align-items: Center;
+  overflow: hidden;
+}
+.strategy_editdia .el-dialog {
+  height: 100%;
+  width: 100%;
+
+  top: 0px !important;
+  margin-top: 0px !important;
+  left: 0px !important;
+  overflow: hidden;
+  position: absolute;
+}
+.CodeMirror-lines {
+  line-height: 2em;
+}
+.strategy .el-dialog__body {
+  height: calc(100% - 190px) !important;
+  overflow: hidden;
+}
+
+.strategy_editdia .el-dialog__body {
+  height: calc(100% - 210px) !important;
+  overflow: hidden;
+}
+
+.strategy_editdia .editor-container {
+  height: 100%;
+}
+.strategy .el-dialog {
+  margin: 0 auto !important;
+
+  overflow: hidden;
+
+  width: 100% !important;
+  height: 100%;
+}
+.strategy .el-dialog__footer {
+  position: absolute;
+  width: 100%;
+
+  bottom: 0px;
+}
+.strategy .editor-container {
+  height: 100% !important;
+  border: #000;
+}
+.strategy .yamlcreate {
+  height: calc(100% - 160px) !important;
+
+  position: relative;
+}
+.strategy .yamledita {
+  height: calc(100% - 160px) !important;
+
+  position: relative;
+}
+
+.strategy_editdia .rowmerges {
+  height: 100%;
+}
+.rowmerges {
+  width: calc(100% - 40px);
+  margin-left: 20px;
+}
+
+.CodeMirror-merge,
+.CodeMirror-merge .CodeMirror,
+.merge > div,
+.history .rowmerges {
+  height: 100%;
+}
+.rowmerges .merge {
+  height: 100% !important;
+}
+.CodeMirror-merge-2pane {
+  height: 100% !important;
+}
+.CodeMirror-merge,
+.CodeMirror-merge .CodeMirror {
+  height: 100% !important;
+  overflow: hidden;
+}
+.strategymergemir {
+  padding-top: 22px;
+  margin-top: 20px;
+}
+.vue-codemirror {
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+.strategy .CodeMirror,
+.eventeditcodemirror .CodeMirror,
+.eventcodemirror .CodeMirror,
+.history .CodeMirror,
+.strategymergemir,
+.strategy_editcodemirror,
+.strategy_editcodemirror .CodeMirror,
+.codmirrorstragety .CodeMirror,
+.openpage .CodeMirror {
+  height: 100% !important;
+  display: block;
+  line-height: 2em;
+  overflow: hidden;
+}
+.CodeMirror {
+  border-right: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+.cm-s-monokai span.cm-comment {
+  color: #a50 !important;
+}
+.cm-s-default .cm-atom,
+.cm-s-monokai span.cm-atom {
+  color: #ae81ff !important;
+}
+.sidebar-container {
+  z-index: 999;
+  overflow: hidden;
+}
+.uncollapsed .sidebar-container {
+  width: 210px;
+  display: block;
+  float: left;
+  position: fixed;
+  left: 0px;
+  height: 100%;
+  top: 0px;
+}
+.uncollapsed .main-container {
+  width: calc(100% - 210px);
+
+  left: 210px;
+}
+.collapsed .sidebar-container {
+  width: 64px;
+  display: block;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+.collapsed .main-container {
+  width: calc(100% - 64px) !important;
+  left: 64px;
+}
+
+.CodeMirror-merge-copybuttons-left,
+.CodeMirror-merge-copybuttons-right {
+  height: 100% !important;
+}
+.CodeMirror-merge-pane {
+  height: 100%;
+}
+
+.el-button--text {
+  color: #337ab7 !important;
+}
+.doing {
+  background-color: #e7faf0;
+  border-color: #d0f5e0;
+  color: #13ce66;
+}
+.over {
+  background-color: #f4f4f5;
+  border-color: #e9e9eb;
+  color: #909399;
+}
+.fail {
+  color: #fff;
+  background-color: #fdf6ec;
+  color: #e6a23c;
+  border-color: #fdf6ec;
+}
+.doing,
+.fail,
+.over {
+  height: 28px;
+  line-height: 26px;
+  padding: 0 10px;
+  margin: 0px auto;
+  width: 80px;
+  font-size: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+.el-button {
+  font-weight: 400 !important;
+}
+.el-button--mini span {
+  font-size: 12px !important;
+}
+.el-button--primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  color: #ffffff;
+}
+.content {
+  height: calc(100% - 40px);
+}
+.el-table .el-table__header thead th {
+  padding: 5px 0;
+  background-color: #f6f6f6;
+}
+
+.el-table__fixed-right-patch {
+  background-color: #f6f6f6 !important;
+}
+
+.el-dialog__body {
+  padding: 10px 20px !important;
+}
+
+.el-submenu__title:hover,
+.is-active .el-menu-item {
+  background-color: #1f2d3d !important;
+}
+.el-header {
+  margin: 10px 20px 0px 20px !important;
+  padding: 0px 10px !important;
+  box-shadow: 0 0 20px rgb(128 145 165 / 30%);
+  display: block;
+  clear: both;
+  height: 50px !important;
+  background-color: #fff;
+  z-index: 999;
+}
+.el-footer {
+  color: #fff;
+}
+
+.el-aside {
+  background-color: #304156 !important;
+
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  height: 100%;
+}
+
+.el-menu {
+  background-color: rgb(48, 65, 86) !important;
+  color: #fff !important;
+
+  border-right: none !important;
+}
+
+.el-container {
+  min-height: 100%;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.title {
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 2em;
+}
+
+.border {
+  width: 100%;
+  height: 0px;
+  display: block;
+  clear: both;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.el-submenu__icon-arrow {
+  right: 8px !important;
+}
+
+.el-pagination {
+  float: right;
+  padding-top: 15px !important;
+}
+.el-dialog__body .el-row {
+  display: block;
+  clear: both;
+  overflow: auto;
+  min-height: 40px;
+}
+.uncollapsed .el-aside {
+  width: 210px !important;
+}
+.main-container {
+  display: block;
+  height: 100%;
+  position: absolute;
+}
+.el-icon-s-unfold,
+.el-icon-s-fold {
+  float: left;
+}
+
+.el-header i {
+  width: 20px;
+  height: 20px;
+  display: block;
+
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 15px;
+  color: #606266;
+}
+.el-icon-full-screen {
+  float: right !important;
+}
+
+.tags-view-item {
+  line-height: 50px;
+  height: 50px;
+  margin-left: 25px;
+  float: left;
+}
+.el-table td,
+.el-table th {
+  height: 40px !important;
+  line-height: 40px !important;
+  padding: 0px !important;
+}
